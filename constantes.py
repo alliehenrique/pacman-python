@@ -1,5 +1,5 @@
 #Dimensões da tela
-LARGURA = 400
+LARGURA = 480
 ALTURA = 600
 
 #Título do jogo

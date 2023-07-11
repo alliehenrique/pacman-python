@@ -66,7 +66,13 @@ class Game:
         texto_rect.midtop = (x, y)
         self.tela.blit(texto, texto_rect)
 
+    def mostrar_start_logo(self, x, y):
+        start_logo_rect = self.pacman_start_logo.get_rect()
+        start_logo_rect.midtop = (x, y)
+        self.tela.blit(self.pacman_start_logo, start_logo_rect)
+
     def mostrar_tela_start(self):
+        self.mostrar_start_logo(constantes.LARGURA / 2, 20)
         self.mostrar_texto(
             'Pressione uma tecla para jogar',
             30, 
@@ -81,12 +87,11 @@ class Game:
             constantes.LARGURA / 2,
             570
         ) 
-        
-        
-        
-        
-        
-        
+
+
+    
+
+
         pygame.display.flip()
         self.esperar_por_jogador()
 
