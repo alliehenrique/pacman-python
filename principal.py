@@ -67,7 +67,26 @@ class Game:
         self.tela.blit(texto, texto_rect)
 
     def mostrar_tela_start(self):
-        self.mostrar_texto('Pressione uma tecla para jogar', 32, constantes.AMARELO, constantes.LARGURA / 2, 320)
+        self.mostrar_texto(
+            'Pressione uma tecla para jogar',
+            30, 
+            constantes.AMARELO,
+            constantes.LARGURA / 2,
+            320
+        )
+        self.mostrar_texto(
+            'Desenvolvido por Shiorih',
+            19, 
+            constantes.BRANCO,
+            constantes.LARGURA / 2,
+            570
+        ) 
+        
+        
+        
+        
+        
+        
         pygame.display.flip()
         self.esperar_por_jogador()
 
