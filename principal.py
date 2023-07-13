@@ -72,6 +72,8 @@ class Game:
         self.tela.blit(self.pacman_start_logo, start_logo_rect)
 
     def mostrar_tela_start(self):
+        pygame.mixer.music.load(os.path.join(self.diretorio_audios, constantes.MUSICA_START))
+        pygame.mixer.music.play()
         self.mostrar_start_logo(constantes.LARGURA / 2, 20)
         self.mostrar_texto(
             'Pressione uma tecla para jogar',

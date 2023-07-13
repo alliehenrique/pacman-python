@@ -19,3 +19,6 @@ PACMAN_START_LOGO = 'pacman-logo-1.png'
 
 #Fonte
 FONTE = 'times new roman'
+
+#Audios
+MUSICA_START = 'intermission.wav'
