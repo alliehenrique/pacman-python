@@ -22,3 +22,4 @@ FONTE = 'times new roman'
 
 #Audios
 MUSICA_START = 'intermission.wav'
+TECLA_START = 'munch_1.wav'

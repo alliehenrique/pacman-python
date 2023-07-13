@@ -107,6 +107,8 @@ class Game:
                     self.esta_rodando = False
                 if event.type == pygame.KEYUP:
                     esperando = False
+                    pygame.mixer.music.stop()
+                    pygame.mixer.Sound(os.path.join(self.diretorio_audios, constantes.TECLA_START)).play()
 
     def mostrar_tela_game_over(self):
         pass
